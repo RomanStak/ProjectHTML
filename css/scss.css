@@ -943,6 +943,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px 0;
 }
 
+.blog .blog_item .blog_content .blog_title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blog .blog_item .blog_content .blog_title a:hover {
+  text-decoration: underline;
+}
+
 .blog .blog_item .blog_content .blog_text {
   font-size: 15px;
   line-height: 24px;
@@ -958,4 +967,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px auto;
   background-color: #e5e5e5;
   margin-bottom: 20px;
+}
+
+.blog .blog_item .blog_footer {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999999;
+}
+
+.blog .blog_item .blog_footer .blog_stat .blog_stat_item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.blog .blog_item .blog_footer .blog_stat .blog_stat_item i {
+  color: #95e1d3;
 }
