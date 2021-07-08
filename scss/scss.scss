@@ -810,9 +810,12 @@ h1,h2,h3,h4,h5,h6{
         & a{
             display: inline-block;
             vertical-align: middle;
-            margin-left: 10px;
+            margin-left: 25px;
             color: #a3e4d8;
             font-size: 18px;
+            & i{
+                margin-right: 15px;
+            }
         }
     }
 }
