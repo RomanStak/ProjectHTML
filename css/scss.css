@@ -1032,7 +1032,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer_col--first {
-  width: 40%;
+  width: 41%;
 }
 
 .footer_col--second {
@@ -1055,7 +1055,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   font-weight: 400;
   color: #999999;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .footer_social {
@@ -1157,19 +1157,24 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #333;
   font-size: 14px;
-  margin-bottom: 30px 0;
-  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .blogs .blogs_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .blogs .blogs_item .blogs_img {
-  width: 120px;
-  height: 80px;
+  max-width: 120px;
+  max-height: 80px;
+  width: auto;
 }
 
 .blogs .blogs_item .blogs_content {
@@ -1177,9 +1182,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .blogs .blogs_item .blogs_content .blogs_title {
+  display: block;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.2;
   font-weight: 400;
   text-transform: uppercase;
   color: #333333;
@@ -1187,4 +1193,57 @@ h1, h2, h3, h4, h5, h6 {
 
 .blogs .blogs_item .blogs_content .blogs_title:hover {
   text-decoration: underline;
+}
+
+.blogs .blogs_item .blogs_content .blogs_date {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999999;
+}
+
+.instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.instagram .instagram_item {
+  width: 32.33333%;
+  border-bottom: 1px solid white;
+}
+
+.instagram .instagram_item img {
+  display: block;
+}
+
+.view_more {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #333333;
+  margin-top: 20px;
+}
+
+.view_more:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  padding: 20px 0;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+}
+
+.copyright span {
+  color: #f5b8b8;
 }
