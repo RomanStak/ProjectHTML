@@ -1158,6 +1158,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
   font-size: 14px;
   margin-bottom: 30px 0;
+  margin-top: 10px;
 }
 
 .blogs .blogs_item {
@@ -1166,11 +1167,24 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
-.blogs .blogs_item .blogs_image {
+.blogs .blogs_item .blogs_img {
   width: 120px;
   height: 80px;
 }
 
 .blogs .blogs_item .blogs_content {
   padding-left: 20px;
+}
+
+.blogs .blogs_item .blogs_content .blogs_title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.blogs .blogs_item .blogs_content .blogs_title:hover {
+  text-decoration: underline;
 }
