@@ -1280,11 +1280,20 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 10px;
   }
   /*stat*/
+  .stat {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .stat_item {
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
     width: 33.333333%;
+    border-left: 0;
+  }
+  .stat_item:last-child {
+    border-right: 0;
   }
 }
 
