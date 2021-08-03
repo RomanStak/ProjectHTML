@@ -97,8 +97,9 @@ hr{
 }
 .container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .intro_inner{
     width: 100%;
@@ -209,6 +210,8 @@ h1,h2,h3,h4,h5,h6{
 .section--map{
     background: url('../img/shirokiy_fon.png') center no-repeat;
     padding: 40px 0;
+    width: 100%;
+    background-size: 100% 100%;
 }
 .section_header{
     width: 100%;
@@ -248,10 +251,12 @@ h1,h2,h3,h4,h5,h6{
 
 .card{
     display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
+    justify-content: center;
+    margin: 80px -15px 0;
+    flex-wrap: wrap;
     .card_item{
-        width: 380px;
+        width: 33.33333%;
+        padding: 0 15px;
         .card_inner{
             background-color: #95e1d3;
             position: relative;
@@ -268,6 +273,8 @@ h1,h2,h3,h4,h5,h6{
             background: linear-gradient(to bottom, #e27c7c, #e8d282 );
             transition: transform .2s linear;
             img{
+                max-width: 100%;
+                height: auto;
                 display: block;
                 transition: opacity .1s linear;
             }
@@ -297,6 +304,7 @@ h1,h2,h3,h4,h5,h6{
     .container{
         .stat{
             display: flex;
+            flex-wrap: wrap;
             .stat_item{
                 flex: 1 1 0;
                 border-left: 1px solid #b6ebe1;
@@ -948,5 +956,86 @@ h1,h2,h3,h4,h5,h6{
     color: black;
     & span{
         color:#f5b8b8;
+    }
+}
+
+
+@media (max-width: 1230px) {
+
+    /*intro*/
+    .intro_title{
+        font-size: 120px;
+    }
+    .intro_suptitle{
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 990px) {
+
+    /*intro*/
+    .intro_title{
+        font-size: 80px;
+    }
+    .intro_suptitle{
+        font-size: 32px;
+    }
+    .nav_link_icon{
+        margin: 0 10px;
+    }
+
+    /*stat*/
+    .stat_item{
+        flex: none;
+        width: 33.333333%;
+    }
+}
+
+@media (max-width: 770px) {
+    /*nav*/
+    .nav {
+        display: none;
+    }
+
+    /*slider*/
+    .slider_text {
+        display: none;
+    }
+
+    /*section*/
+    .section{
+        padding: 40px 0;
+    }
+
+    /*card*/
+    .card_item{
+        width: 100%;
+        max-width: 410px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    /*intro*/
+    .intro_title{
+        font-size: 40px;
+    }
+    .intro_suptitle{
+        font-size: 22px;
+    }
+
+    /*section*/
+    .section_title{
+        font-size: 24px;
+    }
+    .section_suptitle{
+        font-size: 20px;
+    }
+    .section_title::after{
+        margin: 20px auto;
+    }
+    .section_header{
+        margin-bottom: 50px;
     }
 }
