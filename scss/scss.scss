@@ -331,11 +331,12 @@ h1,h2,h3,h4,h5,h6{
 
 .services{
     display: flex;
+    flex-wrap: wrap;
     .services_item{
-        flex: 1 1 0;
-        padding-left: 85px;
+        width: 33.33333%;
         position: relative;
-        padding-right: 35px;
+        margin-bottom: 40px;
+        padding: 0 35px 40px 85px;
         .services_icon{
             position: absolute;
             top: 0;
@@ -355,6 +356,9 @@ h1,h2,h3,h4,h5,h6{
             font-size: 15px;
             color: #999;
         }
+    }
+    .services_item--border{
+        border-bottom: 1px solid #e5e5e5;
     }
 }
 
@@ -969,6 +973,7 @@ h1,h2,h3,h4,h5,h6{
     .intro_suptitle{
         font-size: 52px;
     }
+    
 }
 
 @media (max-width: 990px) {
@@ -985,17 +990,31 @@ h1,h2,h3,h4,h5,h6{
     }
 
     /*stat*/
+    .stat_count{
+        font-size: 40px;
+    }
     .stat{
         justify-content: center;
-    }
-    .stat_item{
+    } 
+    .stat_item {
         flex: none;
-        width: 33.333333%;
+        width: 33.33333%;
         border: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     .stat_item:last-child{
         border-right: 0;
     }
+
+    /*services*/
+    .services_item{
+        width: 50%;
+    }
+    .services_item--border{
+        border-bottom: 0;
+    }
+    
 }
 
 @media (max-width: 770px) {
@@ -1022,7 +1041,7 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 575px){ 
 
     /*intro*/
     .intro_title{
@@ -1044,5 +1063,12 @@ h1,h2,h3,h4,h5,h6{
     }
     .section_header{
         margin-bottom: 50px;
+    }
+    .stat_item{
+        width: 100%;
+        border-bottom: 1px solid #b5eae0;
+    }
+    .stat_count{
+        font-size: 52px;
     }
 }
