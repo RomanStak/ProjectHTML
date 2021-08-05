@@ -369,6 +369,8 @@ h1,h2,h3,h4,h5,h6{
     position: relative;
     .devices_item{
         display: block;
+        max-width: 100%;
+        height: auto;
         }
     }
     .devices_item--iphone{
@@ -380,8 +382,16 @@ h1,h2,h3,h4,h5,h6{
 
 .wedo{
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
     .wedo_item{
         width: 50%;
+        padding: 0 15px;
+        .wedo_img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
     }
 }
 .accordion_item{
@@ -1008,10 +1018,11 @@ h1,h2,h3,h4,h5,h6{
     }
 
     /*services*/
-    .services_item{
+    section .container .services .services_item{
         width: 50%;
+        padding-bottom: 0;
     }
-    .services_item--border{
+    section .container .services .services_item--border{
         border-bottom: 0;
     }
     section .container .services .services_item .services_title {
@@ -1038,12 +1049,33 @@ h1,h2,h3,h4,h5,h6{
     .section{
         padding: 40px 0;
     }
+    .section--devices{
+        padding-bottom: 0;
+    }
 
     /*card*/
     .card .card_item{
         width: 100%;
         max-width: 410px;
         margin-bottom: 30px;
+    }
+
+    /*services*/
+    section .container .services .services_item{
+        width: 100%;
+        padding-left: 55px;
+        padding-right: 0;
+    }
+    section .container .services .services_item .services_icon {
+        left: 10px;
+    }
+
+    /*Wedo*/
+    .section .container .wedo .wedo_item .wedo_img {
+        display: none;
+    }
+    .section .container .wedo .wedo_item {
+        width: 100%;
     }
 }
 
@@ -1074,18 +1106,28 @@ h1,h2,h3,h4,h5,h6{
     /*stat*/
     .statistics .container .stat .stat_item {
         flex: none;
-        width: 33.33333%;
-        border: 0;
+        width: 100%;
+        border-bottom: 1px solid #b5eae0;
         padding-top: 20px;
         padding-bottom: 20px;
     }
     .statistics .container .stat .stat_item:last-child{
-        border-right: 0;
+        border-bottom: 0;
     }
     .statistics .container .stat .stat_item .stat_count{
         font-size: 32px;
     }
     .statistics .container .stat .stat_item .stat_text{
         font-size: 9px;
+    }
+
+    /*devices*/
+    .section .container .devices{
+        max-width: 320px;
+    }
+    .section .container .devices .devices_item--iphone {
+        width: 180px;
+        bottom: -50px;
+        right: -80px;
     }
 }
