@@ -643,17 +643,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reviews .reviews_item {
-  padding: 0 255px;
+  padding: 0 0 0 255px;
   position: relative;
 }
 
 .reviews .reviews_item .reviews_photo {
+  display: block;
   border: 2px solid #95e1d3;
   position: absolute;
-  top: 0;
+  top: -13px;
   left: 0;
   z-index: 1;
-  padding: 43px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 .reviews .reviews_item .reviews_text {
@@ -663,7 +666,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
   color: #999999;
   margin-bottom: 19px;
-  width: 770px;
+  max-width: 100%;
 }
 
 .reviews .reviews_item .reviews_author {
@@ -784,6 +787,11 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 
+.logos_brands {
+  max-width: 100%;
+  height: auto;
+}
+
 .works {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -852,16 +860,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   font-weight: 300;
   font-style: italic;
-}
-
-.reviews_photo_rev {
-  max-width: 190px;
-  max-height: 190px;
-  border-radius: 50%;
-  position: absolute;
-  top: -10%;
-  left: 0;
-  z-index: 1;
 }
 
 .clients {
@@ -1282,6 +1280,10 @@ h1, h2, h3, h4, h5, h6 {
   .intro_suptitle {
     font-size: 52px;
   }
+  /*reviews*/
+  .section .container .reviews .reviews_item .reviews_text {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -1330,6 +1332,17 @@ h1, h2, h3, h4, h5, h6 {
   section .container .services .services_item .services_text {
     font-size: 13px;
   }
+  /*reviews*/
+  .section .container .reviews .reviews_item .reviews_photo {
+    width: 150px;
+    height: 150px;
+  }
+  .section .container .reviews .reviews_item {
+    padding-left: 175px;
+  }
+  .section .container .reviews {
+    padding: 0 60px;
+  }
 }
 
 @media (max-width: 770px) {
@@ -1369,6 +1382,31 @@ h1, h2, h3, h4, h5, h6 {
   }
   .section .container .wedo .wedo_item {
     width: 100%;
+  }
+  /*reviews*/
+  .section .container .reviews .reviews_item .reviews_photo {
+    position: static;
+    margin: 0 auto 20px;
+  }
+  .section .container .reviews .reviews_item {
+    padding-left: 0;
+  }
+  .section .container .reviews .reviews_item .reviews_text {
+    font-size: 16px;
+  }
+  .section .container .reviews .reviews_item .reviews_author {
+    font-size: 20px;
+  }
+  /*works*/
+  .section .works {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section .works .works_col {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 50%;
   }
 }
 
@@ -1420,5 +1458,16 @@ h1, h2, h3, h4, h5, h6 {
     width: 180px;
     bottom: -50px;
     right: -80px;
+  }
+  /*reviews*/
+  .section .container .reviews {
+    padding: 0;
+  }
+  .section .container .reviews .reviews_btn {
+    top: 15%;
+  }
+  /*works*/
+  .section .works .works_col {
+    width: 100%;
   }
 }
